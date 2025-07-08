@@ -1,0 +1,17 @@
+public class DecompileTarget {
+    private String message = "This is a decompilation test.";
+
+    public void printMessage() {
+        System.out.println(message);
+    }
+
+    public int square(int x) {
+        return x * x;
+    }
+
+    public static void main(String[] args) {
+        DecompileTarget obj = new DecompileTarget();
+        obj.printMessage();
+        System.out.println("Square of 5: " + obj.square(5));
+    }
+}
