@@ -1,0 +1,4 @@
+SELECT event_id, COUNT(*) AS session_count
+FROM sessions
+WHERE start_time::time < '12:00' AND end_time::time > '10:00'
+GROUP BY event_id;

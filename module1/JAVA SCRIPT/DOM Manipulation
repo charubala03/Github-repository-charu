@@ -1,0 +1,17 @@
+const eventList = document.querySelector("#event-list");
+
+function renderEvents(eventsToRender) {
+  eventList.innerHTML = "";
+  eventsToRender.forEach(event => {
+    const card = document.createElement("div");
+    card.className = "event-card";
+    card.textContent = `${event.name} - ${event.category}`;
+    const btn = document.createElement("button");
+    btn.textContent = "Register";
+    btn.className = "register-btn";
+    card.appendChild(btn);
+    eventList.appendChild(card);
+  });
+}
+
+renderEvents(communityEvents);

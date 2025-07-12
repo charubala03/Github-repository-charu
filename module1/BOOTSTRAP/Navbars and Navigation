@@ -1,0 +1,29 @@
+#Exercise 10.1
+<h2 class="mt-5">Exercise 10.1: Responsive Navbar</h2>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">MyLogo</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search">
+    </form>
+  </div>
+</nav>
+
+#Exercise 10.2
+<h2 class="mt-5">Exercise 10.2: Tabs and Pills Navigation</h2>
+<ul class="nav nav-tabs mb-3">
+  <li class="nav-item"><a class="nav-link active" href="#">Tab 1</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Tab 2</a></li>
+</ul>
+<ul class="nav nav-pills">
+  <li class="nav-item"><a class="nav-link active" href="#">Pill 1</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Pill 2</a></li>
+</ul>

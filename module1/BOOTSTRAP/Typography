@@ -1,0 +1,13 @@
+#Exercise 7.1
+<h2>Exercise 7.1: Typography Utilities</h2>
+<h1 class="display-1">Display 1</h1>
+<p class="lead">This is a lead paragraph using Bootstrap's lead class.</p>
+<p class="text-muted">This text is muted.</p>
+<p class="fw-bold">This text is bold.</p>
+<p class="fst-italic">This text is italic using <code>fst-italic</code>.</p>
+
+#Exercise 7.2
+<h2>Exercise 7.2: Text Transformation</h2>
+<p class="text-uppercase">this should be uppercase</p>
+<p class="text-lowercase">THIS SHOULD BE LOWERCASE</p>
+<p class="text-capitalize">this text should be capitalized</p>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 5 - Registration Form</title>
+  <style>
+    form {
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    output {
+      margin-top: 10px;
+      display: block;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function showConfirmation() {
+      document.getElementById("confirmation").textContent = "Thank you for registering!";
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="event.preventDefault(); showConfirmation();">
+    <label>Name: <input type="text" placeholder="Your Name" required autofocus></label><br>
+    <label>Email: <input type="email" required placeholder="Your Email"></label><br>
+    <label>Date: <input type="date" required></label><br>
+    <label>Event Type:
+      <select>
+        <option>Music</option>
+        <option>Art</option>
+        <option>Sports</option>
+      </select>
+    </label><br>
+    <label>Message: <textarea placeholder="Your message..."></textarea></label><br>
+    <button type="submit">Submit</button>
+    <output id="confirmation"></output>
+  </form>
+</body>
+</html>

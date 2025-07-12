@@ -1,0 +1,5 @@
+SELECT DATE_TRUNC('month', date) AS month, COUNT(*) AS registration_count
+FROM registrations
+WHERE date >= CURRENT_DATE - INTERVAL '12 months'
+GROUP BY month
+ORDER BY month;

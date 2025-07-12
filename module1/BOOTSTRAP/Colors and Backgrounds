@@ -1,0 +1,9 @@
+#Exercise 13.1
+<h2 class="mt-5">Exercise 13.1: Contextual Colors</h2>
+<div class="p-3 bg-primary text-white mb-2">Primary Section</div>
+<div class="p-3 bg-warning text-dark mb-2">Warning Section</div>
+<div class="p-3 bg-success text-white">Success Section</div>
+
+#Exercise 13.2
+<h2 class="mt-5">Exercise 13.2: Gradient Background</h2>
+<div class="p-5 bg-dark bg-gradient text-white text-center">Dark Gradient Section with White Text</div>

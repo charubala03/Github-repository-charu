@@ -1,0 +1,26 @@
+function updateUIOnRegister(eventName) {
+  alert(`You registered for ${eventName}`);
+}
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("register-btn")) {
+    updateUIOnRegister("Selected Event");
+  }
+});
+
+document.querySelector("#categoryFilter").onchange = function (e) {
+  const category = e.target.value;
+  if (category === "All") {
+    renderEvents(communityEvents);
+  } else {
+    renderEvents(communityEvents.filter(ev => ev.category === category));
+  }
+};
+
+document.querySelector("#search").addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    const query = e.target.value.toLowerCase();
+    const filtered = communityEvents.filter(ev => ev.name.toLowerCase().includes(query));
+    renderEvents(filtered);
+  }
+});

@@ -1,0 +1,5 @@
+SELECT e.id, e.name
+FROM events e
+LEFT JOIN sessions s ON e.id = s.event_id
+GROUP BY e.id, e.name
+HAVING COUNT(s.id) = 0;

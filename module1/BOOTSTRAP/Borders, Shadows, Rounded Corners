@@ -1,0 +1,9 @@
+#Exercise 15.1
+<h2 class="mt-5">Exercise 15.1: Borders and Rounded Image</h2>
+<img src="https://via.placeholder.com/150" class="border border-primary border-3 rounded-circle" alt="Rounded Image" />
+
+#Exercise 15.2
+<h2 class="mt-5">Exercise 15.2: Card with Shadow</h2>
+<div class="card shadow-lg rounded-pill p-4">
+  <p class="mb-0">This card has <code>shadow-lg</code> and <code>rounded-pill</code>.</p>
+</div>

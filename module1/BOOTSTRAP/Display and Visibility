@@ -1,0 +1,10 @@
+#Exercise 14.1
+<h2>Exercise 14.1: Responsive Display Utilities</h2>
+<div class="bg-info text-white p-2 d-none d-md-block d-lg-flex">
+  This is hidden on mobile, visible as block on tablet, flex on desktop.
+</div>
+#Exercise 14.2
+<h2 class="mt-5">Exercise 14.2: Tablet+ Sidebar</h2>
+<div class="d-none d-md-block bg-secondary text-white p-3">
+  Sidebar visible on md (≥768px) and up
+</div>

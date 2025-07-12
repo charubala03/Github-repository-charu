@@ -1,0 +1,29 @@
+function addEvent(eventsArray, event) {
+  eventsArray.push(event);
+}
+
+function registerUser(event) {
+  if (event.seats > 0) {
+    event.seats--;
+    return true;
+  }
+  return false;
+}
+
+function filterEventsByCategory(events, category) {
+  return events.filter(e => e.category === category);
+}
+
+function registrationTracker(category) {
+  let count = 0;
+  return function () {
+    count++;
+    console.log(`${category} registrations: ${count}`);
+  };
+}
+
+const trackMusic = registrationTracker("Music");
+
+function filterEvents(events, callback) {
+  return events.filter(callback);
+}

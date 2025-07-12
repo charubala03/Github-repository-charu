@@ -1,0 +1,9 @@
+document.querySelector("#regForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const { name, email, eventSelect } = e.target.elements;
+  if (!name.value || !email.value) {
+    document.querySelector("#error").textContent = "All fields required.";
+    return;
+  }
+  console.log("Registered:", name.value, email.value, eventSelect.value);
+});

@@ -1,0 +1,13 @@
+const newEvent = {
+  name: "Coding Bootcamp",
+  date: "2025-09-01",
+  category: "Tech"
+};
+
+function logEvent({ name, date }) {
+  console.log(`${name} on ${date}`);
+}
+
+logEvent(newEvent);
+
+const filtered = [...communityEvents].filter(e => e.category === "Music");

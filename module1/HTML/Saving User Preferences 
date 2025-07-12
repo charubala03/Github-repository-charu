@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 8 - Preferences</title>
+  <script>
+    function savePreference() {
+      const value = document.getElementById("eventType").value;
+      localStorage.setItem("preferredEvent", value);
+    }
+
+    function loadPreference() {
+      const saved = localStorage.getItem("preferredEvent");
+      if (saved) document.getElementById("eventType").value = saved;
+    }
+
+    function clearPrefs() {
+      localStorage.clear();
+      sessionStorage.clear();
+      alert("Preferences cleared.");
+    }
+
+    window.onload = loadPreference;
+  </script>
+</head>
+<body>
+  <select id="eventType" onchange="savePreference()">
+    <option value="">Select Event</option>
+    <option value="music">Music</option>
+    <option value="sports">Sports</option>
+  </select>
+  <button onclick="clearPrefs()">Clear Preferences</button>
+</body>
+</html>

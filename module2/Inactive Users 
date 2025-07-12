@@ -1,0 +1,4 @@
+SELECT u.*
+FROM users u
+LEFT JOIN registrations r ON u.id = r.user_id AND r.date >= CURRENT_DATE - INTERVAL '90 days'
+WHERE r.id IS NULL;

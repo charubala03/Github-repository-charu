@@ -1,0 +1,10 @@
+#Exercise 19.1
+@import "../node_modules/bootstrap/scss/bootstrap";
+#nstalling Bootstrap
+npm install bootstrap
+
+#Exercise 19.2
+$primary:#e63946;
+$border-radius: 1rem;
+@import "../node_modules/bootstrap/scss/bootstrap";
+

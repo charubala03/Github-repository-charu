@@ -1,0 +1,9 @@
+const eventName = "Community Music Night";
+const eventDate = "2025-08-15";
+let availableSeats = 30;
+
+console.log(`Event: ${eventName} on ${eventDate}. Seats Available: ${availableSeats}`);
+
+availableSeats--;
+
+console.log(`Updated Seats: ${availableSeats}`);

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 10 - Debugging</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+    }
+  </style>
+  <script>
+    function logMessage() {
+      console.log("Button clicked");
+      let a = 5;
+      debugger;
+      let b = a * 2;
+      console.log("Value of b:", b);
+    }
+  </script>
+</head>
+<body>
+  <div class="box">Inspect Me!</div>
+  <button onclick="logMessage()">Debug</button>
+</body>
+</html>

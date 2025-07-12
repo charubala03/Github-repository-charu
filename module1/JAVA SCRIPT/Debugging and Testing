@@ -1,0 +1,6 @@
+console.log("Form submitted");
+
+function debugRegistration(formData) {
+  debugger;
+  console.log("Payload:", formData);
+}

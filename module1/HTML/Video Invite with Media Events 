@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 7 - Video Event</title>
+  <script>
+    function readyToPlay() {
+      document.getElementById("message").textContent = "Video ready to play";
+    }
+
+    window.onbeforeunload = function () {
+      return "Are you sure you want to leave?";
+    };
+  </script>
+</head>
+<body>
+  <video controls oncanplay="readyToPlay()">
+    <source src="promo.mp4" type="video/mp4">
+    Your browser doesn't support video.
+  </video>
+  <p id="message"></p>
+</body>
+</html>

@@ -1,0 +1,8 @@
+SELECT o.id, o.name,
+       COUNT(e.id) AS event_count,
+       COUNT(CASE WHEN e.status = 'upcoming' THEN 1 END) AS upcoming,
+       COUNT(CASE WHEN e.status = 'completed' THEN 1 END) AS completed,
+       COUNT(CASE WHEN e.status = 'cancelled' THEN 1 END) AS cancelled
+FROM organizers o
+LEFT JOIN events e ON o.id = e.organizer_id
+GROUP BY o.id, o.name;

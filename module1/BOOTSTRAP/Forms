@@ -1,0 +1,35 @@
+#Exercise 8.1
+<h2>Exercise 8.1: Registration Form</h2>
+<form>
+  <div class="mb-3">
+    <label class="form-label">Full Name</label>
+    <input type="text" class="form-control" placeholder="Enter full name">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email address</label>
+    <input type="email" class="form-control" placeholder="Enter email">
+  </div>
+  <div class="mb-3 input-group">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="form-check mb-3">
+    <input type="checkbox" class="form-check-input" id="termsCheck">
+    <label class="form-check-label" for="termsCheck">I agree to terms</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+#Exercise 8.2
+<h2 class="mt-5">Exercise 8.2: Login Form (Form Floating)</h2>
+<form>
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+    <label for="floatingEmail">Email address</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+  <button type="submit" class="btn btn-success">Login</button>
+</form>

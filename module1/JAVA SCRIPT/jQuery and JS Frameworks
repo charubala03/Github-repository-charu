@@ -1,0 +1,13 @@
+$(document).ready(function () {
+  $('#registerBtn').click(function () {
+    alert("Registered via jQuery!");
+  });
+
+  $('.event-card').fadeIn();
+
+  setTimeout(() => {
+    $('.event-card').fadeOut();
+  }, 3000);
+});
+
+console.log("With frameworks like React or Vue, you can build reusable components and manage UI state efficiently.");

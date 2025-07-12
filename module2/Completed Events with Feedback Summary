@@ -1,0 +1,8 @@
+SELECT e.id, e.name,
+       COUNT(DISTINCT r.user_id) AS total_registrations,
+       AVG(f.rating) AS avg_feedback_rating
+FROM events e
+LEFT JOIN registrations r ON e.id = r.event_id
+LEFT JOIN feedback f ON e.id = f.event_id
+WHERE e.status = 'completed'
+GROUP BY e.id, e.name;

@@ -1,0 +1,24 @@
+const events = [
+  { name: "Music Fest", date: "2025-08-01", seats: 10, category: "Music" },
+  { name: "Art Fair", date: "2024-07-01", seats: 0, category: "Art" },
+  { name: "Baking Basics", date: "2025-09-01", seats: 5, category: "Cooking" }
+];
+
+const today = new Date("2025-07-12");
+
+events.forEach(event => {
+  const eventDate = new Date(event.date);
+  if (eventDate > today && event.seats > 0) {
+    console.log(`Upcoming Event: ${event.name}`);
+  }
+});
+
+function register(event) {
+  try {
+    if (event.seats <= 0) throw "No seats available";
+    event.seats--;
+    console.log("Registration successful!");
+  } catch (err) {
+    console.error("Registration failed:", err);
+  }
+}

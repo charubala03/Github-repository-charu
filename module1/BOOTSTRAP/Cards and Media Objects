@@ -1,0 +1,19 @@
+#Exercise 11.1
+<h2 class="mt-5">Exercise 11.1: Profile Card</h2>
+<div class="card" style="width: 18rem;">
+  <img src="https://via.placeholder.com/150" class="card-img-top" alt="Profile">
+  <div class="card-body">
+    <h5 class="card-title">John Doe</h5>
+    <p class="card-text">Web Developer and UI/UX Designer.</p>
+  </div>
+</div>
+
+#Exercise 11.2
+<h2 class="mt-5">Exercise 11.2: Media Object</h2>
+<div class="d-flex mt-3">
+  <img src="https://via.placeholder.com/64" class="me-3" alt="Media">
+  <div>
+    <h5>Media Heading</h5>
+    <p>Some descriptive content beside an image.</p>
+  </div>
+</div>

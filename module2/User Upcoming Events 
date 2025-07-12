@@ -1,0 +1,6 @@
+SELECT e.*
+FROM events e
+JOIN registrations r ON e.id = r.event_id
+JOIN users u ON r.user_id = u.id
+WHERE e.city = u.city AND e.date > CURDATE()
+ORDER BY e.date;

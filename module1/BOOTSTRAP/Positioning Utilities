@@ -1,0 +1,11 @@
+#Exercise 16.1
+<h2 class="mt-5">Exercise 16.1: Fixed Footer</h2>
+<footer class="bg-dark text-white text-center py-2 position-fixed bottom-0 w-100">
+  Fixed Footer at Bottom
+</footer>
+#Exercise 16.2
+<h2 class="mt-5">Exercise 16.2: Badge Overlay</h2>
+<div class="image-container mt-3">
+  <img src="https://via.placeholder.com/200" alt="Image" class="img-fluid">
+  <span class="badge bg-danger image-badge">New</span>
+</div>

@@ -1,0 +1,11 @@
+#Exercise 2.1
+<h2>Exercise 2.1: Bootstrap Folder Structure</h2>
+<ul>
+  <li><strong>css/</strong>: Contains compiled Bootstrap CSS files like <code>bootstrap.min.css</code>.</li>
+  <li><strong>js/</strong>: Contains Bootstrap's JavaScript plugins like <code>bootstrap.bundle.min.js</code>.</li>
+  <li><strong>icons/</strong>: If using Bootstrap Icons, this contains SVG icon files or CSS for icons.</li>
+</ul>
+
+#Exercise 2.2
+<h2>Exercise 2.2: Bootstrap JavaScript Plugins</h2>
+<p class="text-muted">Bootstrap’s JavaScript plugins are included at the end of the page using <code>bootstrap.bundle.min.js</code>.</p>

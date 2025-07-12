@@ -1,0 +1,5 @@
+SELECT e.id, e.name, COUNT(s.id) AS session_count
+FROM events e
+LEFT JOIN sessions s ON e.id = s.event_id
+WHERE e.date > CURRENT_DATE
+GROUP BY e.id, e.name;

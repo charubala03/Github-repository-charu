@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 9 - Geolocation</title>
+  <script>
+    function findLocation() {
+      const output = document.getElementById("location");
+      if (!navigator.geolocation) {
+        output.textContent = "Geolocation not supported.";
+        return;
+      }
+
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          output.textContent = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
+        },
+        (err) => {
+          output.textContent = "Error: " + err.message;
+        },
+        { enableHighAccuracy: true, timeout: 5000 }
+      );
+    }
+  </script>
+</head>
+<body
